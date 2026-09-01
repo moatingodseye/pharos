@@ -1,0 +1,89 @@
+Pharos — Licence and Disclaimer
+Copyright (c) 2026 R. Beeston. All rights reserved.
+
+This licence covers the compiled binaries and documentation distributed in this repository (the
+"Software"). All rights not expressly granted below are reserved by the copyright holder.
+
+
+1. PERMISSION TO USE
+
+You may download, install and use the Software free of charge, for any purpose, including commercial
+purposes, on any number of machines you control. You may keep copies for backup.
+
+
+2. WHAT IS NOT GRANTED
+
+All other rights are reserved by the copyright holder. In particular, and except where a right below
+cannot lawfully be excluded in your jurisdiction, you may not:
+
+  a) sell the Software, or include it in anything you sell or distribute;
+  b) republish or redistribute the Software as your own, or under another name;
+  c) reverse engineer, decompile or disassemble the Software;
+  d) remove or alter this licence, the copyright notice, or any attribution.
+
+Linking to this repository, or telling other people about it, is welcome and always permitted.
+
+
+3. THIRD-PARTY COMPONENTS
+
+The Software is built with Flutter and Dart, and embeds open-source components including `xterm` and
+`flutter_pty` (MIT), SQLite (public domain), and the Flutter engine (BSD-3-Clause). Those components
+remain under their own licences, which are not affected or replaced by this one. Nothing in section 2
+is intended to restrict any right you hold in them under those licences.
+
+
+4. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+The author does not warrant that the Software is free of defects, that it will work on your machine,
+that it will keep working after any update to your operating system or to any other software it
+interacts with, or that any data it stores will be preserved.
+
+
+5. NO LIABILITY — USE AT YOUR OWN RISK
+
+USE OF THE SOFTWARE IS ENTIRELY AT YOUR OWN RISK.
+
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+This exclusion applies without limitation to: lost, corrupted or deleted data; lost work or lost time;
+lost profits or business interruption; and anything done by a command you ran, or caused to be run, in
+a shell the Software was hosting.
+
+The Software is a terminal emulator. It runs the shell you point it at, and that shell does whatever
+you tell it to. It does not review, approve, sandbox, restrict or take responsibility for any command
+executed through it, and it is not a security boundary of any kind.
+
+You are responsible for your own backups and for your own version control.
+
+
+6. WHAT THE SOFTWARE DOES ON YOUR MACHINE
+
+Stated plainly so that "at your own risk" is an informed choice, not a surprise:
+
+  - It writes one folder, `%APPDATA%\Pharos\pharos`, holding the saved pane layout, the window
+    position, a small diagnostics log, and a handshake file for the local control endpoint.
+  - It starts the shell you choose — Git Bash, PowerShell or Command Prompt — as an ordinary child
+    process, running as you, with your privileges and no others.
+  - It reads the files and git status of the directories your panes are standing in, in order to
+    display them. It never writes to them.
+  - It creates no service, scheduled task or registry entry, changes no PATH, and installs nothing.
+  - It contacts no network service and sends no telemetry. It listens on one socket, bound to
+    127.0.0.1 only, on an OS-chosen port behind a per-launch token, so that local tooling can inspect
+    the running application. `--no-control` disables it entirely.
+
+
+7. IF YOU DO NOT ACCEPT THIS LICENCE
+
+Do not use the Software. Delete the files.
+
+
+8. GOVERNING LAW
+
+This licence is governed by the laws of England and Wales. Nothing in it limits any liability that
+cannot lawfully be limited, or affects any statutory right you have as a consumer that cannot be
+waived.

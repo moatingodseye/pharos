@@ -1,0 +1,11 @@
+# This repository is DEPLOY ONLY. No source belongs here — the source lives in
+# the private repo. These rules exist so a stray copy cannot be committed by
+# accident; they are a guard, not a filter to work around.
+*.dart
+*.exe
+*.zip
+*.tgz
+*.tar
+pubspec.yaml
+pubspec.lock
+/.release/
