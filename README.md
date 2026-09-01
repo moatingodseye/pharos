@@ -269,7 +269,14 @@ built, so every report after it was against a binary that predated the fix.
 
 ## Licence
 
-See [LICENCE](LICENSE). Free to download and use, on as many machines as you like, including at work.
-Not to be sold, rebadged, or redistributed as your own, and provided with no warranty of any kind.
+**[MIT](LICENSE).** Use it, copy it, change it, ship it inside something you sell. The only conditions
+are that the copyright line travels with it and that the warranty disclaimer comes too.
+
+There is deliberately nothing here worth policing. The disclaimer is the part that earns its place, and
+it cuts in your favour as much as mine: this is a terminal, it runs whatever you type into it, it is
+not a safety net, and nobody is standing behind what a command you ran did to your files.
+
+Pharos stands on other people's work, all under their own permissive licences — Flutter and Dart
+(BSD-3-Clause), `xterm` and `flutter_pty` (MIT), SQLite (public domain). Nothing above affects those.
 
 Linking to this repository is always welcome.
