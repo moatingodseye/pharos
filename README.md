@@ -26,7 +26,7 @@ same exe in a zip if your browser objects to downloading an executable.
 | file | what it is |
 |---|---|
 | `pharos.exe` | the whole application. 14.0 MB, and it needs nothing beside it |
-| `pharos-0.14.0-windows-x64.zip` | the same exe, zipped, for browsers and mail gateways that block `.exe` |
+| `pharos-0.14.1-windows-x64.zip` | the same exe, zipped, for browsers and mail gateways that block `.exe` |
 | `SHA256SUMS.txt` | checksums for both, generated from the exact files attached |
 
 ### Exactly what this is
@@ -261,7 +261,7 @@ otherwise.
 
 ## Version
 
-**0.14.0**, built 31 August 2026. Its headline change is a fix for a recurring UI lockup — which, for
+**0.14.1**, built 1 September 2026. Its headline change is a fix for a recurring UI lockup — which, for
 the record, was never a mystery in the code: the fix had been written weeks earlier and simply never
 built, so every report after it was against a binary that predated the fix.
 
